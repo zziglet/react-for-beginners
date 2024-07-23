@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>웹프 팀플과제</title>
+        <link rel="stylesheet" href="./game/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script defer src="./game/constant.js"></script>
+        <script defer src="./game/stage.js"></script>
+        <script defer src="./game/collide.js"></script>
+        <script defer src="./game/paddle.js"></script>
+        <script defer src="./game/brick.js"></script>
+        <script defer src="./game/ball.js"></script>
+        <script defer src="./game/scene.js"></script>
+        <script defer src="./game/game.js"></script>
+        <script defer src="./game/gameManager.js"></script>
+    </head>
+    <body>
+        <div id="startPage">
+                <div id="title_start"></div> 
+                    <div id="main_start">
+                        <canvas id="introducePage"></canvas>
+                        <div id="setPage">
+                            <!--배경음-->
+                            <!--스킨(벽돌 이미지, 배경화면 변경)-->
+                        </div> 
+                        <button class="btn_start" id="startButton">game start</button>
+                        <button class="btn_start" id="ruleButton">game rule</button>
+                        <button class="btn_start" id="setButton">game set</button>
+                        <button class="btn_start" id="overButton">game over</button>
+
+                    </div>
+        </div>
+        <div id="opening">
+            <button id="skipButton">SKIP</button>
+        </div>
+        <div id="stage">
+            <div id="stage_level">
+            </div>
+            <div id="stage_img">
+                <!--레이아웃, 버튼 이미지, 시작화면으로 돌아가기 버튼 구현 예정입니다.-->
+                <input type="button" class="stagebtn" id="level1" value="stage1">
+                <input type="button" class="stagebtn" id="level2" value="stage2">
+                <input type="button" class="stagebtn" id="level3" value="stage3">
+            </div>  
+        </div>
+        <div id="content">
+            <div id="top">
+                <div id="left">
+                    <div class="title">LIFE</div>
+                    <div id="life"></div>
+                </div>
+                <div id="middle">
+                    <div class="title">TIME</div>
+                    <div id="time"></div>
+                </div>
+                <div id="right">
+                    <div class="title">SCORE</div>
+                    <div id="score"></div>
+                </div>
+            </div>
+            <canvas id="screen"></canvas>
+            <div id="bottom"></div>
+        </div>
+        <div id="gameOver">
+        </div>
+        <div id="gameClear">
+        </div>
+    </body>
+</html>
